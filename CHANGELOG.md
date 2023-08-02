@@ -2,6 +2,17 @@
 
 ## Release (2023-08-02)
 
+@embroider/addon-dev 4.1.0 (minor)
+
+#### :rocket: Enhancement
+* `addon-dev`
+  * [#1448](https://github.com/embroider-build/embroider/pull/1448) Add the ability to customise rollup-plugin-clean's config ([@mansona](https://github.com/mansona))
+
+#### Committers: 1
+- Chris Manson ([@mansona](https://github.com/mansona))
+
+## Release (2023-08-02)
+
 @embroider/addon-dev 4.0.0 (major)
 @embroider/babel-loader-8 3.0.1 (patch)
 @embroider/compat 3.2.1 (patch)
