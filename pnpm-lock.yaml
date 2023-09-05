@@ -331,7 +331,7 @@ importers:
         version: 1.7.0
       code-equality-assertions:
         specifier: ^0.9.0
-        version: 0.9.0(@types/jest@29.2.0)(qunit@2.19.4)
+        version: 0.9.0(@types/jest@29.2.0)
       ember-engines:
         specifier: ^0.8.19
         version: 0.8.23(@glint/template@1.0.0)
@@ -453,6 +453,9 @@ importers:
       '@types/node':
         specifier: ^15.12.2
         version: 15.12.2
+      '@types/qunit':
+        specifier: ^2.19.6
+        version: 2.19.6
       '@types/resolve':
         specifier: ^1.20.0
         version: 1.20.0
@@ -558,7 +561,7 @@ importers:
         version: 2.1.1
       code-equality-assertions:
         specifier: ^0.9.0
-        version: 0.9.0(@types/jest@29.2.0)(qunit@2.19.4)
+        version: 0.9.0(@types/jest@29.2.0)
       scenario-tester:
         specifier: ^2.1.2
         version: 2.1.2
@@ -1190,6 +1193,12 @@ importers:
       '@ember/string':
         specifier: ^3.1.1
         version: 3.1.1
+      '@embroider/compat':
+        specifier: workspace:*
+        version: link:../../packages/compat
+      '@embroider/shared-internals':
+        specifier: workspace:*
+        version: link:../../packages/shared-internals
       '@glimmer/component':
         specifier: ^1.0.0
         version: 1.1.2(@babel/core@7.22.6)
@@ -1200,8 +1209,8 @@ importers:
         specifier: ^3.4.2
         version: 3.5.2
       code-equality-assertions:
-        specifier: ^0.9.0
-        version: 0.9.0(@types/jest@29.2.0)(qunit@2.19.4)
+        specifier: github:mansona/code-equality-assertions#esm-cjs-build
+        version: github.com/mansona/code-equality-assertions/a84b55b3cc7b7a18fd51e5f7d84cf4f475853c36(@types/jest@29.2.0)(@types/qunit@2.19.6)(qunit@2.19.4)
       console-ui:
         specifier: ^3.0.0
         version: 3.0.0
@@ -1263,6 +1272,9 @@ importers:
       '@types/node':
         specifier: ^10.5.2
         version: 10.5.2
+      '@types/qunit':
+        specifier: ^2.19.6
+        version: 2.19.6
 
   test-packages/unstable-release:
     dependencies:
@@ -1741,7 +1753,7 @@ importers:
         version: /ember-source@4.4.0(@babel/core@7.22.6)
       ember-source-beta:
         specifier: npm:ember-source@beta
-        version: /ember-source@5.3.0-beta.1(@babel/core@7.22.6)
+        version: /ember-source@5.3.0-beta.2(@babel/core@7.22.6)
       ember-source-latest:
         specifier: npm:ember-source@latest
         version: /ember-source@5.2.0(@babel/core@7.22.6)
@@ -7279,6 +7291,9 @@ packages:
   /@types/qunit@2.19.2:
     resolution: {integrity: sha512-hVOSrAcRtRY2R2iCQopzkiSy6BowuSFuR5llHE9R3FDxBCNP4bMdrPpxkE0jZTknn+cmFMT31RfbZWAdu5Qa1w==}
 
+  /@types/qunit@2.19.6:
+    resolution: {integrity: sha512-bz9STa6EHurtpSfn5cNiScBladlw43bM+7luQA985Kd9YlF4dZaLmKt3c5/oSyN1AWAl50YBpqTq0BxCP64nGg==}
+
   /@types/range-parser@1.2.4:
     resolution: {integrity: sha512-EEhsLsD6UsDM1yFhAvy0Cjr6VwmpMWqFBCb9w07wVugF7w9nfajxLuVmngTIpgS6svCnm6Vaw+MZhoDCKnOfsw==}
 
@@ -10391,7 +10406,7 @@ packages:
       q: 1.5.1
     dev: true
 
-  /code-equality-assertions@0.9.0(@types/jest@29.2.0)(qunit@2.19.4):
+  /code-equality-assertions@0.9.0(@types/jest@29.2.0):
     resolution: {integrity: sha512-8t2+ZiCU9TIr/78TyVSEFii9khSic293zVCfndsG7bOymAsdDFmN1GSwjRdyQxz7+tHE+biUvt08Qlx4Xvfuxw==}
     peerDependencies:
       '@types/jest': '2'
@@ -10409,9 +10424,9 @@ packages:
       '@types/jest': 29.2.0
       diff: 5.1.0
       prettier: 2.8.8
-      qunit: 2.19.4
     transitivePeerDependencies:
       - supports-color
+    dev: true
 
   /code-point-at@1.1.0:
     resolution: {integrity: sha512-RpAVKQA5T63xEj6/giIbUEtZwJ4UFIc3ZtvEkiaUERylqe8xb5IvqcgOurZLahv93CLKfxcw5YI+DZcUBRyLXA==}
@@ -14348,8 +14363,8 @@ packages:
       - webpack
     dev: true
 
-  /ember-source@5.3.0-beta.1(@babel/core@7.22.6):
-    resolution: {integrity: sha512-3XCeCc4HAgw7TC2EBG9jmdSU2paOb+JgigTxdCjIU8Mix6gTP4j2Uz2nnZjdLYRXJRlE2+jXoeGjEf5nLbm9VQ==}
+  /ember-source@5.3.0-beta.2(@babel/core@7.22.6):
+    resolution: {integrity: sha512-Prz7dsShsk/JD8bd82xUpFvtltmH8DiP6RowfF178bN8gc4gNy2/e1tXMqKrsXXfowLdqvkXT9Xois0Qzb5pKg==}
     engines: {node: '>= 16.*'}
     dependencies:
       '@babel/helper-module-imports': 7.22.5
@@ -22621,7 +22636,7 @@ packages:
     resolution: {integrity: sha512-dCwEFf0/oT85M1fHBg4F0jtLwJrutGoHSQXCh7u4o2t1drG+c0a9Flnqww6XUKSfQMPpJBRjU8d4RXB09qtvaA==}
     hasBin: true
     peerDependencies:
-      browserslist: '>= 4.21.0'
+      browserslist: ^4.14.0
     dependencies:
       browserslist: 4.21.10
       escalade: 3.1.1
@@ -23346,3 +23361,30 @@ packages:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
     dev: true
+
+  github.com/mansona/code-equality-assertions/a84b55b3cc7b7a18fd51e5f7d84cf4f475853c36(@types/jest@29.2.0)(@types/qunit@2.19.6)(qunit@2.19.4):
+    resolution: {tarball: https://codeload.github.com/mansona/code-equality-assertions/tar.gz/a84b55b3cc7b7a18fd51e5f7d84cf4f475853c36}
+    id: github.com/mansona/code-equality-assertions/a84b55b3cc7b7a18fd51e5f7d84cf4f475853c36
+    name: code-equality-assertions
+    version: 0.9.0
+    peerDependencies:
+      '@types/jest': '2'
+      '@types/qunit': '2'
+      qunit: '2'
+    peerDependenciesMeta:
+      '@types/jest':
+        optional: true
+      '@types/qunit':
+        optional: true
+      qunit:
+        optional: true
+    dependencies:
+      '@babel/core': 7.22.10
+      '@types/jest': 29.2.0
+      '@types/qunit': 2.19.6
+      diff: 5.1.0
+      prettier: 2.8.8
+      qunit: 2.19.4
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
