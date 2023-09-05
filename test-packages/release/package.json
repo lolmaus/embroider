@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "bin": {
-    "embroider-release": "./src/cli.js"
+    "embroider-release": "./build/cli.js"
   },
   "dependencies": {
     "@ef4/lerna-changelog": "^1.0.4",
