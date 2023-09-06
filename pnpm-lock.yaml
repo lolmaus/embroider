@@ -1275,6 +1275,9 @@ importers:
       '@types/qunit':
         specifier: ^2.19.6
         version: 2.19.6
+      scenario-tester:
+        specifier: ^2.1.2
+        version: 2.1.2
 
   test-packages/unstable-release:
     dependencies:
